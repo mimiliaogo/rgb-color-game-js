@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /*  use this number multiplied
+by the element's font size */
+    line-height: 1.5;
+}
+
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+#stripe {
+    background-color: white;
+    padding: 1rem;
+    color: #442355;
+}
+#navbar {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+#brand {
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+#about {
+    margin-left: auto;
+    color: #bbb;
+}
+
+.mode {
+    margin: 0 0.5rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: 800rem;
+    cursor: pointer;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+}
+
+#card-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#color-picked {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+@media (min-width: 576px) {
+    #color-picked {
+        font-size: 200%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.card {
+    width: 30%;
+    background: white;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 1rem;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+	cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: none;
+    border-radius:999rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #484848;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+	cursor: pointer;
+}
+button:hover {
+    background-color: steelblue;
+}
+
+.selected {
+    background-color: steelblue;
+}
